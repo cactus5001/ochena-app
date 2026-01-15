@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Ochena Mobile",
+    "slug": "ochena-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "ochena",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#FDFCF0"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ochena.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Ochena needs access to your camera to upload photos.",
+        "NSPhotoLibraryUsageDescription": "Ochena needs access to your photo library to upload images."
+      }
+    },
+    "android": {
+      "package": "com.ochena.mobile",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FDFCF0",
+          "imageWidth": 200
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
